@@ -1,0 +1,7 @@
+'LigneStation.py' peut récupérer les infos de tous les station.
+
+'horaires.py' peut récupérer les horaires en temps réel.
+
+Doit d'abord exécuter 'LigneStation.py',vous pouvez obtenir 'allstops.json',le fichier existant est l'exemple,les stations sont mises à jour quotidiennement en fonction de la ligne.
+
+Pour les horaires de chaque station,il y a 3000+ stations, Comme test, je n'ai expérimenté que deux stations.pour obtenir les données completes, il faut changer la ligne 13 en 'horaires.py'.
