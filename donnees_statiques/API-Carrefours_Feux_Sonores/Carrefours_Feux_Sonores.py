@@ -46,17 +46,9 @@ def get_data_carrefour(type):
             file.write(data)
     
 
-def fun_timer(type):
-    get_data_carrefour(type)
-    global timer
-    timer = threading.Timer(5, fun_timer,args=(type,))   #Récuperer les horaires tous les 5s
-    timer.start()
 
-timer = threading.Timer(0, fun_timer,args=('csv',))  #Premier démarrage argument signe le format de ficher: csv ou json
-timer.start()
+get_data_carrefour('csv')
 
-time.sleep(60)#Se termine automatiquement après une heure
-timer.cancel()
 
 
 

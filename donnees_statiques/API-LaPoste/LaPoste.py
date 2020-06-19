@@ -44,7 +44,7 @@ def get_data_LaPoste(type):
             
 
 
-            f = codecs.open('C:/Users/woshi/Desktop/API-LaPoste/'+i+'/'+filename+'.csv', 'w','utf_8_sig')
+            f = codecs.open('C:/git/trafic-toulouse/trafic-toulouse/API-LaPoste/'+i+'/'+filename+'.csv', 'w','utf_8_sig')
             writer=csv.writer(f)
             for item in datas:
                 writer.writerow([item['codePostal'], item['longitude'],item['latitude'],item['adress'],
@@ -55,14 +55,6 @@ def get_data_LaPoste(type):
                 data=json.dumps(contentData)
                 file.write(data)
 
-def fun_timer(type):
-    get_data_LaPoste(type)
-    global timer
-    timer = threading.Timer(5, fun_timer,args=(type,))   #Récuperer les horaires tous les 5s
-    timer.start()
 
-timer = threading.Timer(0, fun_timer,args=('csv',))  #Premier démarrage argument signe le format de ficher: csv ou json
-timer.start()
+get_data_LaPoste('csv')
 
-time.sleep(3600)#Se termine automatiquement après une heure
-timer.cancel()
