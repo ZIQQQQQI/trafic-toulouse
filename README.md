@@ -1,2 +1,8 @@
 # trafic-toulouse <Br/>
-1,dossier 'donnees_dynamique' contient api-velo et api-tisseo,chaque api contient nos scripts en python,des exemples des data et test que on a fait avec nos data  <Br/>  2,dossier 'donnees_statiques' contient des donnees statiques en format csv , 2 api pour obtenir des donnees et un word contient des source ou on trouve des donnees  <Br/>3,manual_des_scripts contients des lignes a changer pour manupuler nos scripts(api) <Br/> 4,regrouper.py donne une facon pour mettre les different fiches de donnees ensemble  
+1.	Le dossier « données_dynamiques » contient l’API-velo et l’API-tisseo, et chacune de ces API contient nos scripts en Python, ainsi que des exemples des data et des tests que nous nous avons effectué.<br/>
+
+2.	Le dossier « données_statiques » contient des données statiques au format CSV, ainsi que 2 API pour récolter des données, et un fichier Word qui contient les sources des données.<br/>
+
+3.	« Manuel_des_scripts » contient les lignes modifiables pour manipuler les scripts API.<br/>
+
+4.	« regrouper.py » permet de grouper les données entre elles.<br/>
